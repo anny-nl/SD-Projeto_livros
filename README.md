@@ -41,23 +41,14 @@ Projeto desenvolvido como exercício do conceito de **Sistemas Distribuídos**, 
 ---
 
 ## 📂 Estrutura do Projeto
-
--cd server
--npm install
--node app.js
-
-Deve aparecer:
- Servidor rodando na porta 3000
-
- 
 ---
-
 ## ⚙️ Como rodar o projeto
 
 1. Clone este repositório:
    ```bash
    git clone https://github.com/seuusuario/projeto-sd-livros.git
    cd projeto-sd-livros/server
+
 
 
 
