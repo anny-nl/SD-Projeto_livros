@@ -1,0 +1,25 @@
+{
+  "name": "cadastro-livros-sd",
+  "version": "1.0.0",
+  "description": "Sistema distribuído de cadastro de livros usando Node.js, Express e Supabase.",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node app.js",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "supabase",
+    "sistema-distribuido",
+    "livros"
+  ],
+  "author": "Seu Nome",
+  "license": "MIT",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.46.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
