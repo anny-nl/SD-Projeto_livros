@@ -1,4 +1,4 @@
-# 📚 Sistema Distribuído de Cadastro de Livros
+#  Sistema Distribuído de Cadastro de Livros
 
 Projeto desenvolvido como exercício do conceito de **Sistemas Distribuídos**, utilizando:
 - **Node.js + Express**
@@ -6,8 +6,7 @@ Projeto desenvolvido como exercício do conceito de **Sistemas Distribuídos**, 
 - **dotenv** para variáveis de ambiente
 
 ---
-
-## 🚀 Funcionalidades
+##  Funcionalidades
 - Cadastro de livros (CRUD completo):
   - Título do livro
   - Autor principal
@@ -20,7 +19,6 @@ Projeto desenvolvido como exercício do conceito de **Sistemas Distribuídos**, 
 
 ## Estrutura do Projeto
 - Rodar no terminal:
-# 📚 Sistema Distribuído de Cadastro de Livros
 
 Projeto desenvolvido como exercício do conceito de **Sistemas Distribuídos**, utilizando:
 - **Node.js + Express**
@@ -29,7 +27,7 @@ Projeto desenvolvido como exercício do conceito de **Sistemas Distribuídos**, 
 
 ---
 
-## 🚀 Funcionalidades
+##  Funcionalidades
 - Cadastro de livros (CRUD completo):
   - Título do livro
   - Autor principal
@@ -40,9 +38,9 @@ Projeto desenvolvido como exercício do conceito de **Sistemas Distribuídos**, 
 
 ---
 
-## 📂 Estrutura do Projeto
+##  Estrutura do Projeto
 ---
-## ⚙️ Como rodar o projeto
+##  Como rodar o projeto
 
 1. Clone este repositório:
    ```bash
