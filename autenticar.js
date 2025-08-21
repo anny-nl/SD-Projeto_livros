@@ -1,18 +1,34 @@
-import { supabase } from "../config/supabase.js"
+import { createClient } from "@supabase/supabase-js";
+import {
+  supabase as supabaseAdmin,
+  supabaseUrl,
+  supabaseKey,
+} from "./supabase.js";
 
 export const autenticar = async (req, res, next) => {
-  const token = req.headers.authorization?.replace("Bearer ", "")
+  const token = req.headers.authorization?.replace("Bearer ", "");
 
   if (!token) {
-    return res.status(401).json({ erro: "⚠️ Token não enviado" })
+    return res.status(401).json({ erro: "⚠️ Token não enviado" });
   }
 
-  const { data, error } = await supabase.auth.getUser(token)
+  const {
+    data: { user },
+    error,
+  } = await supabaseAdmin.auth.getUser(token);
 
-  if (error || !data.user) {
-    return res.status(401).json({ erro: "❌ Usuário não autenticado" })
+  if (error || !user) {
+    return res.status(401).json({ erro: "❌ Usuário não autenticado" });
   }
 
-  req.usuario = data.user
-  next()
-}
+  req.usuario = user;
+
+  // ✨ A MUDANÇA CRÍTICA ESTÁ AQUI ✨
+  // Cria um novo cliente Supabase que age EM NOME do usuário logado,
+  // passando o token dele em todas as futuras requisições ao DB.
+  req.supabase = createClient(supabaseUrl, supabaseKey, {
+    global: { headers: { Authorization: `Bearer ${token}` } },
+  });
+
+  next();
+};
