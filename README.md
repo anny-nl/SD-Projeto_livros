@@ -31,18 +31,6 @@ A aplicação foi construída em **Node.js** com **Express**, utilizando **Supab
 
 ## Estrutura do Projeto
 
-A API é organizada seguindo boas práticas de separação de responsabilidades:
-
-- **server.js / index.js** → inicialização do servidor Express
-- **routes/** → definição das rotas de livros e autenticação
-- **controllers/** → lógica de cada funcionalidade (CRUD)
-- **middlewares/** → verificação de token e tratamento de erros
-- **config/** → variáveis de ambiente e integração com Supabase
-
----
-
-## Estrutura do Projeto
-
 ```
 SD-Projeto_livros/
 ├── app.js                # Arquivo principal do servidor
@@ -55,7 +43,13 @@ SD-Projeto_livros/
 └── .env                  # Variáveis de ambiente (não incluído no repositório)
 ```
 
----
+A API é organizada seguindo boas práticas de separação de responsabilidades:
+
+- **server.js / index.js** → inicialização do servidor Express
+- **routes/** → definição das rotas de livros e autenticação
+- **controllers/** → lógica de cada funcionalidade (CRUD)
+- **middlewares/** → verificação de token e tratamento de erros
+- **config/** → variáveis de ambiente e integração com Supabase
 
 ## Como rodar o projeto
 
@@ -71,3 +65,4 @@ SD-Projeto_livros/
 ## SEGUE O LINK DO VÍDEO
 
 -
+
