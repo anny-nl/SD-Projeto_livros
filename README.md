@@ -55,14 +55,16 @@ A API é organizada seguindo boas práticas de separação de responsabilidades:
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seuusuario/projeto-sd-livros.git
-   cd projeto-sd-livros/server
+   git clone https://github.com/seuusuario/sd-projeto-livros.git
+   cd "seu_diretório\SD-Projeto_livros-main"
+
    npm install
    npm run dev
 
 
 
    ```
+
 
 
 
