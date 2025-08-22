@@ -36,14 +36,6 @@ A API é organizada seguindo boas práticas de separação de responsabilidades:
 
 ---
 
-## Como rodar o projeto
-
-1. Clone este repositório:  
-   ```bash
-   git clone https://github.com/seuusuario/projeto-sd-livros.git
-   cd projeto-sd-livros/server
----
-
 ##  Estrutura do Projeto
 ---
 ##  Como rodar o projeto
@@ -55,6 +47,7 @@ A API é organizada seguindo boas práticas de separação de responsabilidades:
    Npm install
    Npm install cors
    Npm run dev
+
 
 
 
