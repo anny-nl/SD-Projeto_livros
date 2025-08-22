@@ -57,10 +57,13 @@ A API é organizada seguindo boas práticas de separação de responsabilidades:
    ```bash
    git clone https://github.com/seuusuario/projeto-sd-livros.git
    cd projeto-sd-livros/server
-   Npm install
-   Npm install cors
-   Npm run dev
+   npm install
+   npm run dev
+
+
+
    ```
+
 
 
 
