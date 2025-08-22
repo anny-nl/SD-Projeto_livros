@@ -48,6 +48,8 @@ A API é organizada seguindo boas práticas de separação de responsabilidades:
    Npm install cors
    Npm run dev
 
+## SEGUE O LINK DO VÍDEO
+-
 
 
 
