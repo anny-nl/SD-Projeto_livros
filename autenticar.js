@@ -23,9 +23,6 @@ export const autenticar = async (req, res, next) => {
 
   req.usuario = user;
 
-  // ✨ A MUDANÇA CRÍTICA ESTÁ AQUI ✨
-  // Cria um novo cliente Supabase que age EM NOME do usuário logado,
-  // passando o token dele em todas as futuras requisições ao DB.
   req.supabase = createClient(supabaseUrl, supabaseKey, {
     global: { headers: { Authorization: `Bearer ${token}` } },
   });
